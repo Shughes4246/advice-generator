@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Manrope">
+
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
 
@@ -15,14 +21,22 @@
   </style>
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="card">
+    <div class="advice-num">
+      <p>Advice #<span id="num"></span></p>
+    </div>
+    <div class="advice-container">
+      <p id="advice-text">Loading advice...</p>
+    </div>
+    <div class="divider">
+      <img class="desktop" src="images/pattern-divider-desktop.svg" alt="Divider">
+      <img class="mobile" src="images/pattern-divider-mobile.svg" alt="Divider">
+    </div>
+    <div class="dice">
+      <img src="images/icon-dice.svg" alt="Dice">
+    </div>
   </div>
+  
+  <script src="main.js"></script>
 </body>
 </html>
